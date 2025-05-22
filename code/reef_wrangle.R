@@ -5,8 +5,6 @@
 library(tidyverse)
 library(sf)
 library(archive)  # for extracting .rar cross-platform
-library(stringr)  # for manipulating shapefiles
-library(dplyr)    # for selecting random islands
 
 # Clear the environment
 rm(list = ls())

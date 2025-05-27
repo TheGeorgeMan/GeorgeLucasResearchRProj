@@ -114,12 +114,8 @@ ggplot() +
   geom_sf(data = sampled_reefs, fill = "red", color = "darkred", size = 1.2) +
   theme_minimal() +
   labs(
-    title = "Sampled Reefs with Islands",
-    subtitle = "Red = Sampled reefs | Green = Islands | Blue = All reefs"
+    title = "Sampled Reefs with Islands"
   )
 
-
 #Export as shapefile
-st_write(sampled_reefs, "sampled_reefs3.shp")
-st_write(islands_sf, "islands_sf.shp") #Remove these two in final script, but
-st_write(reefs_sf, "reefs_sf.shp")     #nice for testing.
+st_write(sampled_reefs, "sampled_reefs.shp")

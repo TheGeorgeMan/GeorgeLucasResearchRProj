@@ -54,4 +54,3 @@ islands |>
   select(FCODE) |> 
   anti_join(islands_attr  |> 
               select(FCODE))
-
